@@ -275,7 +275,7 @@ class Xgraph:
             r2p.coe_event_list_str2list(
                 subprocess
                     .check_output(
-                        [os.path.join(os.path.dirname(__file__), "..", "Rust", binary_name),
+                        [os.path.join(os.path.dirname(__file__), "..", "Rust_files", binary_name),
                          "false", point2pos_file, triangle_list_file])
                     .decode(encoding='utf-8'),
                 self.get_node_positions()
@@ -344,7 +344,7 @@ class Xgraph:
             r2p.edge_list_str2list(
                 subprocess.check_output([
                     os.path.join(
-                        os.path.dirname(__file__), "..", "Rust", binary_name),
+                        os.path.dirname(__file__), "..", "Rust_files", binary_name),
                     "true", point2pos_file, edge_list_file])
                 .decode(encoding='utf-8')
             )
